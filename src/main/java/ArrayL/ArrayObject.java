@@ -14,15 +14,15 @@ public class ArrayObject {
 
     }
 
-    public void replArray() {
-        ArrayList<String> listStr = new ArrayList<>();
-        listStr.add("One");
-        listStr.add("Two");
-        listStr.add("Tree");
-        listStr.add("Four");
+    public void replArray(ArrayList<String> listStr, String str1, String str2) {
 
-        int i = listStr.indexOf("Tree");
-        listStr.set(i, "Three");
+        for (String st : listStr) {
+            if (st.equals(str1)) {
+                int i = listStr.indexOf(st);
+                listStr.set(i, str2);
+            }
+        }
+
         System.out.println("ArrayList String after replacing: ");
         for (String st : listStr)
             System.out.println(st);
@@ -30,16 +30,7 @@ public class ArrayObject {
 
     }
 
-    public void removeValue() {
-
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(3);
-        list.add(9);
-        list.add(11);
-        list.add(18);
-        list.add(20);
-        list.add(22);
-
+    public void removeValue(ArrayList<Integer> list) {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             Integer value = iterator.next();
