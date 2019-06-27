@@ -8,7 +8,8 @@ public class ArrayObject {
     public void decrSort(Integer[] array) {
         List<Integer> list1 = Arrays.asList(array);
         Collections.sort(list1, Comparator.reverseOrder());
-        System.out.println("List ordered by decreasing: " + list1);
+        list1.toArray();
+        System.out.println("Array ordered by decreasing: " + list1);
         System.out.println();
 
     }
