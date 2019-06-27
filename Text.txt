@@ -1,0 +1,5 @@
+Constructing an array means creating the array object on the heap, 
+doing a new on the array type. To create an array object, Java must
+know how much space to allocate on the heap, so you must specify the
+size of the array at creation time. The size of the array is the number
+of elements the array will hold.
